@@ -7,6 +7,6 @@ interface {{ interface.name }}
  switchport mode trunk
  switchport trunk allowed vlan {{ interface.vlan }}
 {% endif -%}
- description {{ interface.description }}
+ description {{ interface.description| upper }}
 !
 {% endfor -%}
