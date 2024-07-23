@@ -1,0 +1,10 @@
+interfaces:
+  - name: GigabitEthernet0/1
+    type: access
+    vlan: 10
+    description: "Port do komputera biurowego"
+
+  - name: GigabitEthernet0/2
+    type: trunk
+    vlan: "10,20,30"
+    description: "Port trunkowy do innego przełącznika"

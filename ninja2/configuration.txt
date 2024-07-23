@@ -1,0 +1,10 @@
+interface GigabitEthernet0/1
+switchport mode access
+ switchport access vlan 10
+description Port do komputera biurowego
+!
+interface GigabitEthernet0/2
+switchport mode trunk
+ switchport trunk allowed vlan 10,20,30
+description Port trunkowy do innego przełącznika
+!
